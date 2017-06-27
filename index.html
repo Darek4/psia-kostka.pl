@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Great+Vibes|Open+Sans:300,400" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Psia Kostka - Hotel dla psów</title>
+</head>
+  
+<body>
+  
+    <header>
+        <nav class="header-wrapper">
+            <div class="logo">
+                <a href="index.html"><img src="images/logo.png"></a>
+                <a href="index.html"><h1>Psia Kostka</h1></a> 
+                <div id="hamburger">
+                    <div class="burger one"></div>
+                    <div class="burger two"></div>
+                    <div class="burger three"></div>
+                </div>
+            </div>
+            
+            <ul id="menu">
+                <a class="current" href="index.html"><li>O Hotelu</li></a>
+                <a href="oferta.html"><li>Oferta</li></a>
+                <a href="pobyt.html"><li>Pobyt</li></a>
+                <a href="rezerwacja.html"><li>Rezerwacja</li></a>
+                <a href="kontakt.html"><li>Kontakt</li></a>
+            </ul>
+        </nav>
+    </header>
+    
+    <div class="main-banner-wrapper">
+        <div class="main-banner-image"><img src="images/pies.jpg"></div>
+        <div class="main-banner-text">
+            <img src="images/logo.png">
+            <h1>Kameralny<br />hotel dla psów</h1>
+            <div class="border-bottom"></div>
+            <p>„Psia kostka” to przytulny przydomowy hotelik
+                dla psów położony na zielonych peryferiach
+                Dąbrowy Górniczej, w mocno zalesionej dzielnicy
+                Strzemieszyce Wielkie. Działka położona jest w
+                zacisznym miejscu, z dala od ruchu
+                samochodowego, tuż przy lesie.
+            </p>
+            <a href="rezerwacja.html">
+                <div class="reservation-button">Rezerwacja</div>
+            </a>
+        </div>     
+    </div>
+    
+    
+    <section id="section-one">
+        <div class="section-wrapper">
+            <h2 class="white">O Hotelu</h2>
+            <p class="white">Nasz hotelik jest kameralny, posiadamy 3 miejsca w  kojcach zaopatrzonych w budy oraz 5 miejsc w przeznaczonym dla psiaków drewnianym ogrzewanym domku. Psy posiadają również specjalnie wydzielony dla nich teren, na którym mogą w ciągu dnia pobiegać i pobawić się. Każdemu z naszych gości zapewniamy dodatkowo codzienne spacery po lesie oraz odpowiednią dawkę głasków i przytulasów.
+            </p>
+            <div class="images image-anim" id="image-one"></div>
+            <div class="images image-anim" id="image-two"></div>
+            <div class="images image-anim" id="image-three"></div>
+        </div>
+        <div id="modal">
+            <span class="close" id="cursor">&times;</span>
+            <div class="modal-content">    
+                <div class="my-slides">
+                    <img src="images/naszpies.JPG">
+                </div>
+                <div class="my-slides">
+                    <img src="images/kojce.JPG">
+                </div>
+                <div class="my-slides">
+                    <img src="images/domek.JPG">
+                </div>
+                <a id="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a id="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+        </div>
+    </section>
+    
+    <section id="section-two">
+        <div class="section-wrapper">
+            <h2 class="h2-green">O Nas</h2>
+            <div id="image-onas"><div class="images onas"></div></div>
+            <p>Jesteśmy ludźmi, którzy cenią spokój,  przyrodę i życie w harmonii z naturą. Dlatego też traktujemy nasz hotel nie jako sposób na biznes ale przede wszystkim jako możliwość połączenia pasji z życiem zawodowym. Sami jesteśmy szczęśliwymi posiadaczami owczarka niemieckiego, świnki morskiej, rybek … i nie jest to nasze ostatnie słowo… ;-)
+            </p>
+        </div>
+    </section>
+    
+    <section id="section-three">    
+        <div class="section-wrapper">
+            <div class="naglowek"><h2 class="white">Recenzje</h2></div>
+            <p class="white recenzja active">Polecam Bardzo hotelik ! Biari zadowolony bardzoooo. Bardzo sympatyczny klimat, Bardzo dobrzy opiekunowie.
+               <br />Malwina
+            </p>
+            <p class="white recenzja">Doskonała opieka, domowa atmosfera, widać, że psami zajmują się prawdziwi miłośnicy zwierząt. Najlepszy hotel dla psów, z jakim do tej pory mieliśmy do czynienia.
+               <br />Aneta i Krzysztof
+            </p>  
+            <p class="white recenzja">Pierwszy raz korzystaliśmy z hotelu dla piesków i myślę, że trafiliśmy idealnie.
+               <br />Edyta i Marek 
+            </p>  
+            <p class="white recenzja">Nasza Perełka po raz pierwszy przebywała w hotelu, gdy po nią przyjechaliśmy wyglądała na szczęśliwego psiaka i wcale nie spieszyło jej się opuszczać hotelu :)
+               <br />Asia i Maciek
+            </p>
+            <div>
+                <a onclick="currentReview(1)" class="slider-button"></a>
+                <a onclick="currentReview(2)" class="slider-button"></a>
+                <a onclick="currentReview(3)" class="slider-button"></a>
+                <a onclick="currentReview(4)" class="slider-button"></a>
+            </div>
+        </div>
+    </section>
+    
+    <section id="section-four">
+        <div class="section-wrapper">
+            <h2 class="h2-green">Kontakt</h2>
+            <div class="dane-kontaktowe">
+                <div class="dane adres">
+                    <img src="images/buda.png">
+                    <h3>Adres</h3>
+                    <p>ul. Strzemieszycka 55 c<br />
+                       42-530 Dąbrowa Górnicza
+                    </p>
+                </div>
+                <div class="dane telefon">
+                    <img src="images/telefon.png">
+                    <h3>Telefon</h3>
+                    <p>787 405 107<br />
+                       505 615 253
+                    </p>
+                </div>
+                 <div class="dane email">
+                    <img src="images/koperta.png">
+                    <h3>E-mail</h3>
+                    <a href="mailto:rezerwacja@psia-kostka.pl">rezerwacja@psia-kostka.pl</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+       <div class="footer-wrapper">
+         <a href="mailto:d.krajewski84@gmail.com">Projekt i wykonanie strony:<span>DK</span>
+         </a>
+         <p>&copy; Copyright: Hotel Psia Kostka </p>          
+       </div>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="javascript.js"></script>
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-101173914-1', 'auto');
+      ga('send', 'pageview');
+    </script>
+</body>
+</html>
